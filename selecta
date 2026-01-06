@@ -790,7 +790,7 @@ class TTY < Struct.new(:console_file)
 
   def get_available_input
     input = console_file.getc
-    while console_file.ready?
+    while console_file.wait_readable(0)
       input += console_file.getc
     end
     input
