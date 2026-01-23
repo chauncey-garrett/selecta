@@ -20,7 +20,7 @@ KEY_CTRL_M = ?\C-m
 KEY_DELETE = 127.chr # Equivalent to ?\C-?
 
 class Selecta
-  VERSION = [0, 0, 7]
+  VERSION = [0, 0, 8]
 
   def main
     # We have to parse options before setting up the screen or trying to read
